@@ -1,4 +1,4 @@
 {
   "presets": ["env", "react", "react-native"],
-  "plugins": ["react-native-web/babel"]
+  "plugins": ["babel-plugin-react-native-web"]
 }
