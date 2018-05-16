@@ -1,19 +1,30 @@
-import React, { Component } from "react";
-import { View, Text, Button } from "react-native";
+import React, { Component } from "react"
+import { View, StyleSheet, Text, Button } from "react-native"
 
 class App extends Component {
-  logStuff() {
-    console.log("some stuff");
-  }
-
   render() {
     return (
-      <View>
-        <Text>React Native Web Starter</Text>
-        <Button onPress={this.logStuff} title="Log some stuff" />
+      <View style={styles.container}>
+        <Text style={styles.welcome}>
+          Welcome to Reframe!
+        </Text>
       </View>
-    );
+    )
   }
 }
 
-export default App;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'gold',
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  }
+})
+
+export default App
